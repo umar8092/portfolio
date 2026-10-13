@@ -89,6 +89,7 @@ ${p.objects ? `<p>Records kept in sync: ${p.objects.map(esc).join(", ")}.</p>` :
 </div>
 <p style="margin-top:2rem">Next case study: <a href="/projects/${next.id}/">${esc(next.title)}</a></p>
 </main>
+<script data-goatcounter="https://umar8092.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 `;
@@ -145,6 +146,7 @@ h2{font-size:1.4rem;margin:2.2rem 0 1rem}
 <p>Production AI agents and integrations I have built. Each page shows how it works and what I delivered.</p>
 ${GROUPS.map(([g, label]) => `<h2>${label}</h2><div class="grid">${PROJECTS.filter(p => p.group === g).map(p => `<a href="/projects/${p.id}/"><strong>${esc(p.title)}</strong><span>${esc(p.card)}</span></a>`).join("")}</div>`).join("\n")}
 </main>
+<script data-goatcounter="https://umar8092.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 `);
